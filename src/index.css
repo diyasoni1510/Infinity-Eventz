@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light grayish-blue background for the whole page */
+body {
+  /* background-color: #f0f4f853; very light gray-blue */
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  /* font-family: "Nunito Sans", sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
+  /* color: #2c3e50; */
+  margin: 0;
+  /* padding: 20px; */
+}
+
+/* Common styles for all headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  margin: 0 0 1em;
+  line-height: 1.2;
+  font-family: "Marcellus", serif;
+  color: #a87c67;
+}
+
+/* Default (desktop-first) font sizes */
+h1 {
+  font-size: 3rem; /* ~48px */
+}
+h2 {
+  font-size: 2.5rem; /* ~40px */
+}
+h3 {
+  font-size: 2.25rem; /* ~36px */
+}
+h4 {
+  font-size: 2rem; /* ~32px */
+}
+h5 {
+  font-size: 1.5rem; /* ~24px */
+}
+h6 {
+  font-size: 1.25rem; /* ~20px */
+}
+p {
+  /* font-family: "Noto Sans JP", sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
+  color: #4f4f4f;
+}
+
+/* Responsive font sizes for mobile devices */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* ~32px */
+  }
+  h2 {
+    font-size: 1.75rem; /* ~28px */
+  }
+  h3 {
+    font-size: 1.5rem; /* ~24px */
+  }
+  h4 {
+    font-size: 1.25rem; /* ~20px */
+  }
+  h5 {
+    font-size: 1rem; /* ~16px */
+  }
+  h6 {
+    font-size: 0.875rem; /* ~14px */
+  }
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.planning-swiper .swiper-initialized,
+.social-swiper .swiper-initialized {
+  min-height: 380px;
+}
+
+.decor-swiper .swiper-initialized {
+  min-height: 320px;
+}
+
+.planning-swiper .swiper-pagination-bullet-active,
+.social-swiper .swiper-pagination-bullet-active,
+.decor-swiper .swiper-pagination-bullet-active {
+  background: #a87c67;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scrolling-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.scrolling-content {
+  display: inline-flex;
+  animation: scroll-left 30s linear infinite;
+}
+
+.offers {
+  flex: 0 0 auto;
+  margin-right: 2rem;
+}
