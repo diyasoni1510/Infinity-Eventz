@@ -338,7 +338,13 @@ const Header = ({ bg, heading, para, path }) => {
             </Link>
           </li>
           <li>
-            <a href="#">venues</a>
+            {/* <a href="#">venues</a> */}
+            <Link
+              to="/venues"
+              className={`${pathname == "venues" ? "text-[#A87C67]" : ""} `}
+            >
+              venues
+            </Link>
           </li>
           <li>
             <a href="/#partners">partner</a>
